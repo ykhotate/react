@@ -1,8 +1,7 @@
-// store
 import { create } from "zustand";
-import { fetchRadioPrograms } from "../fetch";
-import { Program } from "../radio-programs";
 import dayjs, { Dayjs } from "dayjs";
+import { fetchRadioPrograms } from "../features";
+import { Program } from "../types";
 
 type RadioProgramState = {
   programs: Program[];
