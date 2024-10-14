@@ -12,6 +12,9 @@ const TimeTable = () => {
               <ProgramGrid
                 title={program.title}
                 ftl={String(program.ftl)}
+                url={program.url}
+                desc={program.desc}
+                pfm={program.pfm}
                 key={index}
               />
             );

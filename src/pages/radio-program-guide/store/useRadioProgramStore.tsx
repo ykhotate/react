@@ -30,7 +30,9 @@ export const useRadioProgramStore = create<RadioProgramStore>()((set) => ({
     const jsonData = fetchRadioPrograms(searchDay);
 
     jsonData.then((res) => {
-      const genreList: string[] = res.map((pro) => pro.genre.program?.name);
+      const genreList: string[] = res.map(
+        (pro) => pro.genre.program?.name ?? "ジャンル無し"
+      );
       const noDuplicatesList = Array.from(new Set(genreList));
       setPrograms(res);
       setGenreList(noDuplicatesList);
