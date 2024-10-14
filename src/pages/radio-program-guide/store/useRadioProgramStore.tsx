@@ -28,17 +28,13 @@ export const useRadioProgramStore = create<RadioProgramStore>()((set) => ({
     const setGenreList = useRadioProgramStore.getState().setGenres;
     const searchDay = useRadioProgramStore.getState().searchDay;
     const jsonData = fetchRadioPrograms(searchDay);
-    console.log(
-      jsonData.then((res) => {
-        console.log(res.progs);
-        const genreList: string[] = res.progs.prog.map(
-          (pro) => pro.genre.program.name
-        );
-        const noDuplicatesList = Array.from(new Set(genreList));
-        setPrograms(res.progs?.prog);
-        setGenreList(noDuplicatesList);
-      })
-    );
+
+    jsonData.then((res) => {
+      const genreList: string[] = res.map((pro) => pro.genre.program?.name);
+      const noDuplicatesList = Array.from(new Set(genreList));
+      setPrograms(res);
+      setGenreList(noDuplicatesList);
+    });
   },
   setSearchDay: (day) => {
     set({ searchDay: day });
