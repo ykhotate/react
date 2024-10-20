@@ -1,0 +1,8 @@
+export enum UnitName {
+    VIRTUAL_SINGER,
+    LEO_NEED,
+    MORE_MORE_JUMP,
+    VIVID_BAD_SQUAD,
+    WONDERLANDS_SHOWTIME,
+    NIGHT_CODE_25
+}

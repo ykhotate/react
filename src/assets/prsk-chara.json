@@ -1,0 +1,26 @@
+[
+    {
+        "name": "天馬 司",
+        "iconUrl": "https://pjsekai.sega.jp/assets/data/webp/character/unite04/tsukasa/now/navi_icon.png.webp",
+        "age": 17,
+        "unit": 4
+    },
+    {
+        "name": "鳳 えむ",
+        "iconUrl": "https://pjsekai.sega.jp/assets/data/webp/character/unite04/emu/now/navi_icon.png.webp",
+        "age": 16,
+        "unit": 4
+    },
+    {
+        "name": "神代 類",
+        "iconUrl": "https://pjsekai.sega.jp/assets/data/webp/character/unite04/rui/now/navi_icon.png.webp",
+        "age": 17,
+        "unit": 4
+    },
+    {
+        "name": "草薙 寧々",
+        "iconUrl": "https://pjsekai.sega.jp/assets/data/webp/character/unite04/nene/now/navi_icon.png.webp",
+        "age": 16,
+        "unit": 4
+    }
+]
