@@ -1,37 +1,21 @@
-import { useEffect, useState } from "react";
 import { Character } from "../types";
-import { getCharaData } from "../features";
-import { Avatar, List, ListItem, ListItemAvatar, ListItemButton, ListItemText } from "@mui/material";
+import { List } from "@mui/material";
+import CharacterItemButton from "./CharacterItemButton";
 
-const CharacterList = () => {
-    const [characterList, setCharacterList] =useState<Character[]>([])
-    useEffect(()=>{
-        setCharacterList(getCharaData)
-    },[])
+type CharacterListProps = {
+  charas: Character[];
+};
+
+const CharacterList: React.FC<CharacterListProps> = ({ charas }) => {
   return (
     <>
-    <List dense sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-      {characterList && characterList.length > 0
-        ? characterList.map((character, index) => {
-            return (
-                <ListItem
-                  key={index}
-                  disablePadding
-                >
-                  <ListItemButton>
-                    <ListItemAvatar>
-                      <Avatar
-                        alt={`Avatar n°${index + 1}`}
-                        src={character.iconUrl}
-                      />
-                    </ListItemAvatar>
-                    <ListItemText id={character.name} primary={character.name} />
-                  </ListItemButton>
-                </ListItem>
-              );
-          })
-        : null}
-        </List>
+      <List dense sx={{ bgcolor: "background.paper" }}>
+        {charas && charas.length > 0
+          ? charas.map((character) => {
+              return <CharacterItemButton chara={character} />;
+            })
+          : null}
+      </List>
     </>
   );
 };

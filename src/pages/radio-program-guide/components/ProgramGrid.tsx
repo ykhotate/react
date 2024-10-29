@@ -1,13 +1,4 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Link,
-  Stack,
-  Typography,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box, Link, Stack, Typography } from "@mui/material";
 
 type ProgramGridProps = {
   title: string;
@@ -30,34 +21,27 @@ const ProgramGrid: React.FC<ProgramGridProps> = ({
         <Box minWidth={78} bgcolor={"#2c2c2c"} color={"white"}>
           {ftl ? ftl.slice(0, 2) + " : " + ftl.slice(2) : null}
         </Box>
-        <Accordion sx={{ width: "100%" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel-content"
-            id="panel-header"
-          >
-            <Stack pl={2} textAlign={"left"} direction={"row"}>
-              {url ? (
-                <Link href={url}>{title}</Link>
-              ) : (
-                <Typography fontFamily={"Segoe UI"}>{title}</Typography>
-              )}
+        <Stack pl={2} textAlign={"left"} direction={"column"}>
+          <Stack direction={"row"}>
+            {url ? (
+              <Link href={url}>{title}</Link>
+            ) : (
+              <Typography fontFamily={"Segoe UI"}>{title}</Typography>
+            )}
 
-              <Typography pl={2} fontSize={12} alignSelf={"flex-end"}>
-                {pfm}
-              </Typography>
-            </Stack>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Box
-              textAlign={"left"}
-              dangerouslySetInnerHTML={{ __html: desc }}
-              fontSize={14}
-              lineHeight={1.1}
-              pl={4}
-            />
-          </AccordionDetails>
-        </Accordion>
+            <Typography pl={2} fontSize={12} alignSelf={"flex-end"}>
+              {pfm}
+            </Typography>
+          </Stack>
+          <Box
+            textAlign={"left"}
+            dangerouslySetInnerHTML={{ __html: desc }}
+            fontSize={11}
+            lineHeight={1.1}
+            pl={4}
+            mt={1}
+          />
+        </Stack>
       </Stack>
     </>
   );

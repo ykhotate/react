@@ -1,9 +1,12 @@
-import { CharacterList } from "./components";
+import { SnackbarProvider } from "notistack";
+import { UnitList } from "./components";
 
 const PrskLayout = () => {
   return (
     <>
-        <CharacterList />
+      <SnackbarProvider>
+        <UnitList />
+      </SnackbarProvider>
     </>
   );
 };

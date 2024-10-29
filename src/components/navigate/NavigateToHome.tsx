@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { TextButton } from "..";
 import { HOME_URL } from "../../consts";
+import Button from "@mui/material/Button";
 
 const NavigateToHome = () => {
   const navigate = useNavigate();
@@ -9,7 +9,9 @@ const NavigateToHome = () => {
   };
   return (
     <>
-      <TextButton text={"ホームへ"} onClick={handleClick} />
+      <Button color={"inherit"} onClick={handleClick}>
+        HOME
+      </Button>
     </>
   );
 };

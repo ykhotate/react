@@ -5,7 +5,7 @@ type ButtonProps = {
   onClick: () => void;
 };
 
-const TextButton = ({ text, onClick }: ButtonProps) => {
+const TextButton: React.FC<ButtonProps> = ({ text, onClick }) => {
   return (
     <>
       <Button variant="contained" onClick={onClick}>
