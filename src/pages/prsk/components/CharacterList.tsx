@@ -12,7 +12,9 @@ const CharacterList: React.FC<CharacterListProps> = ({ charas }) => {
       <List dense sx={{ bgcolor: "background.paper" }}>
         {charas && charas.length > 0
           ? charas.map((character) => {
-              return <CharacterItemButton chara={character} />;
+              return (
+                <CharacterItemButton key={character.name} chara={character} />
+              );
             })
           : null}
       </List>

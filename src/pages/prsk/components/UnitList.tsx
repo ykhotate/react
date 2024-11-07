@@ -26,6 +26,7 @@ const UnitList = () => {
         {Object.values(UnitName).map((unit) => {
           return (
             <CharacterList
+              key={unit}
               charas={characterList[UnitName[unit as keyof typeof UnitName]]}
             />
           );
