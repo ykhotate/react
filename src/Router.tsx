@@ -4,7 +4,7 @@ import { HOME_URL, PRSK_PAGE_URL, RADIO_PROGRAM_URL } from "./consts";
 
 function AppRoutes() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.VITE_PUBLIC_URL || ''}>
       <Routes>
         <Route path={HOME_URL} element={<Home />} />
         <Route path={RADIO_PROGRAM_URL} element={<RadioLayout />} />
