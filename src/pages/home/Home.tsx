@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavigateToRadioProgram, NavigateToPrskPage } from "../../components";
+import { NavigateToRadioProgram } from "../../components";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -15,7 +15,7 @@ const Home = () => {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
         <NavigateToRadioProgram />
-        <NavigateToPrskPage />
+        {/* <NavigateToPrskPage /> */}
       </div>
     </>
   );
