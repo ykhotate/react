@@ -31,9 +31,9 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: yarn install  # プロジェクト依存関係のインストール
+        run: yarn install
       - name: Install Vite globally
-        run: yarn install -g vite  # グローバルインストール
+        run: yarn global add vite
       - name: Build the project
         run: tsc -b && vite build
         env:
