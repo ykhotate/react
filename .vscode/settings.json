@@ -2,7 +2,13 @@
     "cSpell.words": [
         "Chara",
         "consts",
+        "HOTATE",
         "Prsk",
         "Radiko"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "cSpell.autoFormatConfigFile": false,
+    "eslint.format.enable": true
 }
