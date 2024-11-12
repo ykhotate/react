@@ -4,10 +4,14 @@ import "./index.css";
 import "./App.css";
 import { Axios } from "./hooks";
 import AppRoutes from "./Router";
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "./ui";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Axios />
-    <AppRoutes />
+    <ThemeProvider theme={theme}>
+      <AppRoutes />
+    </ThemeProvider>
   </StrictMode>
 );

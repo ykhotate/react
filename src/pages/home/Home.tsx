@@ -1,36 +1,66 @@
 import { Box, Card, Stack, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
 
-const INTRODUCTION: string = await fetch( "/react/" + "introduction.txt").then((res) => res.text().then((data) => data));
+type HistoryType = {
+  date: Date,
+  title: string,
+  contents: string
+};
 
-const UPDATE_HISTORY = [`新規作成しました`]
+async function fetchIntroduction(): Promise<string> {
+  const response = await fetch("/react/introduction.txt");
+  return response.text();
+}
+
+async function fetchUpdateHistory(): Promise<HistoryType[]> {
+  const response = await fetch("/react/update-history.json");
+  return response.json();
+}
+
 const Home = () => {
+  const [introduction, setIntroduction] = useState<string>("");
+  const [updateHistory, setUpdateHistory] = useState<HistoryType[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const introData = await fetchIntroduction();
+      setIntroduction(introData);
+
+      const historyData = await fetchUpdateHistory();
+      setUpdateHistory(historyData);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
-      <Typography variant="h4" mt={5}>
+      <Typography variant="h4" margin={"40px auto"}>
         YK-HOTATE.COM
       </Typography>
-      <Box maxWidth={800} mt={5} mb={5}>
+      <Box maxWidth={800} margin={"20px auto"}>
         <Typography variant="h4">
           はじめに
         </Typography>
         <Typography variant="body1" whiteSpace={"pre-wrap"}>
-          {INTRODUCTION}
+          {introduction}
         </Typography>
       </Box>
-      <Typography variant="h5">
+      <Box margin={"20px auto"}>
+        <Typography variant="h5">
           更新履歴
         </Typography>
-      <Box overflow={"auto"} maxHeight={200} maxWidth={500} margin={"auto"} border={"thick"}>
-        <Stack direction={"column"} gap={2} margin={1}>
-        {UPDATE_HISTORY.map((update, id) => {
-          return (
-            <Card key={id}>
-              <Typography variant="body2" whiteSpace={"pre-wrap"}>
-                {update}
-              </Typography>
-            </Card>)
-        })}
+        <Box overflow={"auto"} maxHeight={200} maxWidth={500} margin={"auto"} border={"thick"}>
+          <Stack direction={"column"} gap={2} margin={1}>
+            {updateHistory.map((update, id) => (
+              <Card key={id}>
+                <Typography variant="body2" whiteSpace={"pre-wrap"}>
+                  {update.contents}
+                </Typography>
+              </Card>
+            ))}
           </Stack>
+        </Box>
       </Box>
     </>
   );

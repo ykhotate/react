@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { TextButton } from "..";
 import { RADIO_PROGRAM_URL } from "../../consts";
+import { MenuItem } from "@mui/material";
 
 const NavigateToRadioProgram = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const NavigateToRadioProgram = () => {
   };
   return (
     <>
-      <TextButton text={"ラジオ番組表へ"} onClick={handleClick} />
+      <MenuItem onClick={handleClick}>ラジオ番組表へ</MenuItem>
     </>
   );
 };

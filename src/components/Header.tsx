@@ -1,14 +1,25 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { NavigateToHome } from "./navigate";
+import { Stack } from "@mui/material";
+import { WorkMenu } from "./button";
+
+declare module '@mui/material/AppBar' {
+  interface AppBarPropsColorOverrides {
+    violet: true;
+  }
+}
 
 const Header = () => {
   return (
-      <AppBar position="sticky">
-        <Toolbar disableGutters>
+    <AppBar position="fixed" color="violet" sx={{ width: "100%" }}>
+      <Toolbar sx={{ height: "100%", display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
+        <Stack direction={"row"}>
           <NavigateToHome />
-        </Toolbar>
-      </AppBar>
+          <WorkMenu />
+        </Stack>
+      </Toolbar>
+    </AppBar>
   );
 };
 export default Header;

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { TextButton } from "..";
 import { PRSK_PAGE_URL } from "../../consts";
+import { MenuItem } from "@mui/material";
 
 const NavigateToPrskPage = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const NavigateToPrskPage = () => {
   };
   return (
     <>
-      <TextButton text={"プロセカのページへ"} onClick={handleClick} />
+      <MenuItem onClick={handleClick}>プロセカのページへ</MenuItem>
     </>
   );
 };
