@@ -6,13 +6,12 @@ import { HOME_URL } from '@/consts';
 import { styled } from '@mui/material/styles';
 
 const CustomAppBar = styled(AppBar)({
-	position: 'fixed',
-	color: 'violet'
+	position: 'fixed'
 }) as typeof AppBar;
 
 const Header = () => {
 	return (
-		<CustomAppBar color="violet" sx={{ width: '100%' }}>
+		<CustomAppBar color="primary" sx={{ width: '100%' }}>
 			<Toolbar
 				sx={{
 					height: '100%',
