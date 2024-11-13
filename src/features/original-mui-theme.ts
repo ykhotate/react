@@ -1,17 +1,17 @@
-import { createTheme, alpha, getContrastRatio } from '@mui/material/styles';
+import { createTheme, alpha, getContrastRatio } from '@mui/material';
 
 declare module '@mui/material/styles' {
-	export interface Palette {
+	interface Palette {
 		violet: Palette['primary'];
 	}
 
-	export interface PaletteOptions {
+	interface PaletteOptions {
 		violet?: PaletteOptions['primary'];
 	}
 }
 
 declare module '@mui/material/AppBar' {
-	export interface AppBarPropsColorOverrides {
+	interface AppBarPropsColorOverrides {
 		violet: true;
 	}
 }
