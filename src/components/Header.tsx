@@ -4,12 +4,6 @@ import { NavigateToHome } from "./navigate";
 import { Stack } from "@mui/material";
 import { WorkMenu } from "./button";
 
-declare module '@mui/material/AppBar' {
-  interface AppBarPropsColorOverrides {
-    violet: true;
-  }
-}
-
 const Header = () => {
   return (
     <AppBar position="fixed" color="violet" sx={{ width: "100%" }}>
