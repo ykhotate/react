@@ -1,184 +1,184 @@
 [
-  {
-    "name": "初音ミク",
-    "nameTag": "miku",
-    "birthday": "8/31",
-    "tall": 158,
-    "unit": 0
-  },
-  {
-    "name": "鏡音リン",
-    "nameTag": "rin",
-    "birthday": "12/27",
-    "tall": 152,
-    "unit": 0
-  },
-  {
-    "name": "鏡音レン",
-    "nameTag": "len",
-    "birthday": "12/27",
-    "tall": 156,
-    "unit": 0
-  },
-  {
-    "name": "巡音ルカ",
-    "nameTag": "luka",
-    "birthday": "01/30",
-    "tall": 162,
-    "unit": 0
-  },
-  {
-    "name": "MEIKO",
-    "nameTag": "meiko",
-    "birthday": "11/5",
-    "tall": 167,
-    "unit": 0
-  },
-  {
-    "name": "KAITO",
-    "nameTag": "kaito",
-    "birthday": "2/17",
-    "tall": 175,
-    "unit": 0
-  },
-  {
-    "name": "星乃一歌",
-    "nameTag": "ichika",
-    "birthday": "8/11",
-    "tall": 162,
-    "unit": 1
-  },
-  {
-    "name": "天馬咲希",
-    "nameTag": "saki",
-    "birthday": "5/9",
-    "tall": 160,
-    "unit": 1
-  },
-  {
-    "name": "望月穂波",
-    "nameTag": "honami",
-    "birthday": "10/27",
-    "tall": 166,
-    "unit": 1
-  },
-  {
-    "name": "日乃森志歩",
-    "nameTag": "shiho",
-    "birthday": "1/8",
-    "tall": 159,
-    "unit": 1
-  },
-  {
-    "name": "花里みのり",
-    "nameTag": "minori",
-    "birthday": "4/14",
-    "tall": 159,
-    "unit": 2
-  },
-  {
-    "name": "桐谷遥",
-    "nameTag": "haruka",
-    "birthday": "10/5",
-    "tall": 163,
-    "unit": 2
-  },
-  {
-    "name": "桃井愛莉",
-    "nameTag": "airi",
-    "birthday": "3/19",
-    "tall": 156,
-    "unit": 2
-  },
-  {
-    "name": "日野森雫",
-    "nameTag": "shizuku",
-    "birthday": "12/6",
-    "tall": 168,
-    "unit": 2
-  },
-  {
-    "name": "小豆沢こはね",
-    "nameTag": "kohane",
-    "birthday": "3/2",
-    "tall": 156,
-    "unit": 3
-  },
-  {
-    "name": "白石杏",
-    "nameTag": "an",
-    "birthday": "7/26",
-    "tall": 160,
-    "unit": 3
-  },
-  {
-    "name": "東雲彰人",
-    "nameTag": "akito",
-    "birthday": "11/12",
-    "tall": 176,
-    "unit": 3
-  },
-  {
-    "name": "青柳冬弥",
-    "nameTag": "toya",
-    "birthday": "5/25",
-    "tall": 179,
-    "unit": 3
-  },
-  {
-    "name": "天馬司",
-    "nameTag": "tsukasa",
-    "birthday": "5/17",
-    "tall": 173,
-    "unit": 4
-  },
-  {
-    "name": "鳳えむ",
-    "nameTag": "emu",
-    "birthday": "9/9",
-    "tall": 152,
-    "unit": 4
-  },
-  {
-    "name": "草薙寧々",
-    "nameTag": "nene",
-    "birthday": "7/20",
-    "tall": 156,
-    "unit": 4
-  },
-  {
-    "name": "神代類",
-    "nameTag": "rui",
-    "birthday": "6/24",
-    "tall": 182,
-    "unit": 4
-  },
-  {
-    "name": "宵崎奏",
-    "nameTag": "kanade",
-    "birthday": "2/10",
-    "tall": 154,
-    "unit": 5
-  },
-  {
-    "name": "朝比奈まふゆ",
-    "nameTag": "mafuyu",
-    "birthday": "1/27",
-    "tall": 162,
-    "unit": 5
-  },
-  {
-    "name": "東雲絵名",
-    "nameTag": "ena",
-    "birthday": "4/30",
-    "tall": 158,
-    "unit": 5
-  },
-  {
-    "name": "暁山瑞希",
-    "nameTag": "mizuki",
-    "birthday": "8/27",
-    "tall": 165,
-    "unit": 5
-  }
+	{
+		"name": "初音ミク",
+		"nameTag": "miku",
+		"birthday": "8/31",
+		"tall": 158,
+		"unit": 0
+	},
+	{
+		"name": "鏡音リン",
+		"nameTag": "rin",
+		"birthday": "12/27",
+		"tall": 152,
+		"unit": 0
+	},
+	{
+		"name": "鏡音レン",
+		"nameTag": "len",
+		"birthday": "12/27",
+		"tall": 156,
+		"unit": 0
+	},
+	{
+		"name": "巡音ルカ",
+		"nameTag": "luka",
+		"birthday": "01/30",
+		"tall": 162,
+		"unit": 0
+	},
+	{
+		"name": "MEIKO",
+		"nameTag": "meiko",
+		"birthday": "11/5",
+		"tall": 167,
+		"unit": 0
+	},
+	{
+		"name": "KAITO",
+		"nameTag": "kaito",
+		"birthday": "2/17",
+		"tall": 175,
+		"unit": 0
+	},
+	{
+		"name": "星乃一歌",
+		"nameTag": "ichika",
+		"birthday": "8/11",
+		"tall": 162,
+		"unit": 1
+	},
+	{
+		"name": "天馬咲希",
+		"nameTag": "saki",
+		"birthday": "5/9",
+		"tall": 160,
+		"unit": 1
+	},
+	{
+		"name": "望月穂波",
+		"nameTag": "honami",
+		"birthday": "10/27",
+		"tall": 166,
+		"unit": 1
+	},
+	{
+		"name": "日乃森志歩",
+		"nameTag": "shiho",
+		"birthday": "1/8",
+		"tall": 159,
+		"unit": 1
+	},
+	{
+		"name": "花里みのり",
+		"nameTag": "minori",
+		"birthday": "4/14",
+		"tall": 159,
+		"unit": 2
+	},
+	{
+		"name": "桐谷遥",
+		"nameTag": "haruka",
+		"birthday": "10/5",
+		"tall": 163,
+		"unit": 2
+	},
+	{
+		"name": "桃井愛莉",
+		"nameTag": "airi",
+		"birthday": "3/19",
+		"tall": 156,
+		"unit": 2
+	},
+	{
+		"name": "日野森雫",
+		"nameTag": "shizuku",
+		"birthday": "12/6",
+		"tall": 168,
+		"unit": 2
+	},
+	{
+		"name": "小豆沢こはね",
+		"nameTag": "kohane",
+		"birthday": "3/2",
+		"tall": 156,
+		"unit": 3
+	},
+	{
+		"name": "白石杏",
+		"nameTag": "an",
+		"birthday": "7/26",
+		"tall": 160,
+		"unit": 3
+	},
+	{
+		"name": "東雲彰人",
+		"nameTag": "akito",
+		"birthday": "11/12",
+		"tall": 176,
+		"unit": 3
+	},
+	{
+		"name": "青柳冬弥",
+		"nameTag": "toya",
+		"birthday": "5/25",
+		"tall": 179,
+		"unit": 3
+	},
+	{
+		"name": "天馬司",
+		"nameTag": "tsukasa",
+		"birthday": "5/17",
+		"tall": 173,
+		"unit": 4
+	},
+	{
+		"name": "鳳えむ",
+		"nameTag": "emu",
+		"birthday": "9/9",
+		"tall": 152,
+		"unit": 4
+	},
+	{
+		"name": "草薙寧々",
+		"nameTag": "nene",
+		"birthday": "7/20",
+		"tall": 156,
+		"unit": 4
+	},
+	{
+		"name": "神代類",
+		"nameTag": "rui",
+		"birthday": "6/24",
+		"tall": 182,
+		"unit": 4
+	},
+	{
+		"name": "宵崎奏",
+		"nameTag": "kanade",
+		"birthday": "2/10",
+		"tall": 154,
+		"unit": 5
+	},
+	{
+		"name": "朝比奈まふゆ",
+		"nameTag": "mafuyu",
+		"birthday": "1/27",
+		"tall": 162,
+		"unit": 5
+	},
+	{
+		"name": "東雲絵名",
+		"nameTag": "ena",
+		"birthday": "4/30",
+		"tall": 158,
+		"unit": 5
+	},
+	{
+		"name": "暁山瑞希",
+		"nameTag": "mizuki",
+		"birthday": "8/27",
+		"tall": 165,
+		"unit": 5
+	}
 ]

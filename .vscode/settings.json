@@ -3,12 +3,16 @@
         "Chara",
         "consts",
         "HOTATE",
+        "notistack",
         "Prsk",
-        "Radiko"
+        "Radiko",
+        "zustand"
     ],
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "cSpell.autoFormatConfigFile": false,
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true
 }
