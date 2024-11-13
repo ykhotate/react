@@ -1,10 +1,9 @@
 import { Stack, ThemeProvider } from '@mui/material';
 
 import { SearchDayInput, TimeTable, UpdateButton } from './components';
-import { originalMuiTheme } from '../../features';
+import { theme } from '../../features';
 
 const RadioLayout = () => {
-	const theme = originalMuiTheme();
 	return (
 		<>
 			<ThemeProvider theme={theme}>

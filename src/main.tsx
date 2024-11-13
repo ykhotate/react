@@ -5,12 +5,12 @@ import './App.css';
 import { Axios } from './hooks';
 import AppRoutes from './Router';
 import { ThemeProvider } from '@emotion/react';
-import { originalMuiTheme } from './features';
+import { theme } from './features';
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<Axios />
-		<ThemeProvider theme={originalMuiTheme()}>
+		<ThemeProvider theme={theme}>
 			<AppRoutes />
 		</ThemeProvider>
 	</StrictMode>
