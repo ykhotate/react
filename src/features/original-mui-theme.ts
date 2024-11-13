@@ -1,4 +1,4 @@
-import { createTheme, alpha, getContrastRatio } from '@mui/material';
+import { alpha, createTheme, getContrastRatio } from '@mui/material';
 
 declare module '@mui/material/styles' {
 	interface Palette {

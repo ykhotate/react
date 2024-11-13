@@ -3,10 +3,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Stack from '@mui/material/Stack';
 import NavigateButton from './NavigateButton';
 import { HOME_URL } from '@/consts';
+import { styled } from '@mui/material/styles';
+
+const CustomAppBar = styled(AppBar)({
+	position: 'fixed',
+	color: 'violet'
+}) as typeof AppBar;
 
 const Header = () => {
 	return (
-		<AppBar position="fixed" color="violet" sx={{ width: '100%' }}>
+		<CustomAppBar color="violet" sx={{ width: '100%' }}>
 			<Toolbar
 				sx={{
 					height: '100%',
@@ -21,7 +27,7 @@ const Header = () => {
 					<NavigateButton text={'PERSONAL DEV'} url={HOME_URL} />
 				</Stack>
 			</Toolbar>
-		</AppBar>
+		</CustomAppBar>
 	);
 };
 export default Header;
