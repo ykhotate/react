@@ -4,8 +4,8 @@ import './index.css';
 import './App.css';
 import { Axios } from './hooks';
 import AppRoutes from './Router';
-import { ThemeProvider } from '@emotion/react';
 import { theme } from './features';
+import { ThemeProvider } from '@mui/material';
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
