@@ -1,32 +1,12 @@
-import { alpha, createTheme, getContrastRatio } from '@mui/material';
-
-// declare module '@mui/material/styles' {
-// 	interface Palette {
-// 		violet: Palette['primary'];
-// 	}
-
-// 	interface PaletteOptions {
-// 		violet?: PaletteOptions['primary'];
-// 	}
-// }
-
-// declare module '@mui/material/AppBar' {
-// 	interface AppBarPropsColorOverrides {
-// 		violet: true;
-// 	}
-// }
-
-const violetBase = '#BA55FF';
-const violetMain = alpha(violetBase, 0.7);
+import { createTheme } from '@mui/material';
+import { amber } from '@mui/material/colors';
 
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: violetMain,
-			light: alpha(violetBase, 0.5),
-			dark: alpha(violetBase, 0.9),
-			contrastText:
-				getContrastRatio(violetMain, '#fff') > 4.5 ? '#fff' : '#111'
+			main: amber[100],
+			light: amber[50],
+			dark: amber[200]
 		}
 	},
 	components: {
