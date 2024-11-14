@@ -35,33 +35,40 @@ const Home = () => {
 
 	return (
 		<>
-			<Typography variant="h4" margin={'40px auto'}>
+			<Typography variant="h3" mt={3} ml={'auto'} mr={'auto'} mb={3}>
 				YK-HOTATE.COM
 			</Typography>
-			<Box maxWidth={800} margin={'20px auto'}>
-				<Typography variant="h4">はじめに</Typography>
-				<Typography variant="body1" whiteSpace={'pre-wrap'}>
+			<Box
+				maxWidth={800}
+				margin={1}
+				border={'dashed thin violet'}
+				padding={2}>
+				<Typography variant="h3">はじめに</Typography>
+				<Typography variant="body1" whiteSpace={'pre-wrap'} mt={2}>
 					{introduction}
 				</Typography>
 			</Box>
-			<Box margin={'20px auto'}>
+			<Box margin={1} border={'dashed thin violet'} padding={2}>
 				<Typography variant="h5">更新履歴</Typography>
-				<Box
-					overflow={'auto'}
-					maxHeight={200}
-					maxWidth={500}
-					margin={'auto'}
-					border={'thick'}>
+				<Box overflow={'auto'} maxHeight={200} border={'thick'}>
 					<Stack direction={'column'} gap={2} margin={1}>
-						{updateHistory.map((update, id) => (
-							<Card key={id}>
-								<Typography
-									variant="body2"
-									whiteSpace={'pre-wrap'}>
-									{update.contents}
-								</Typography>
-							</Card>
-						))}
+						{updateHistory
+							.sort((a, b) =>
+								new Date(a.date) < new Date(b.date) ? -1 : 1
+							)
+							.map((update, id) => (
+								<Card key={id}>
+									<Typography variant="body2" margin={1}>
+										{update.date.toString()}
+									</Typography>
+									<Typography
+										variant="body2"
+										whiteSpace={'pre-wrap'}
+										margin={1}>
+										{update.contents}
+									</Typography>
+								</Card>
+							))}
 					</Stack>
 				</Box>
 			</Box>
