@@ -2,7 +2,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Stack from '@mui/material/Stack';
 import NavigateButton from './NavigateButton';
-import { HOME_URL } from '@/consts';
+import { DEV_URL, HOME_URL, PROFILE_URL, WORK_URL } from '@/consts';
 import { styled } from '@mui/material/styles';
 const CustomAppBar = styled(AppBar)({
 	position: 'fixed'
@@ -20,9 +20,9 @@ const Header = () => {
 				}}>
 				<Stack direction={'row'}>
 					<NavigateButton text={'HOME'} url={HOME_URL} />
-					<NavigateButton text={'ABOUT'} url={HOME_URL} />
-					<NavigateButton text={'WORK'} url={HOME_URL} />
-					<NavigateButton text={'PERSONAL DEV'} url={HOME_URL} />
+					<NavigateButton text={'PROFILE'} url={PROFILE_URL} />
+					<NavigateButton text={'WORK'} url={WORK_URL} />
+					<NavigateButton text={'PERSONAL DEV'} url={DEV_URL} />
 				</Stack>
 			</Toolbar>
 		</CustomAppBar>

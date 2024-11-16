@@ -43,13 +43,13 @@ const Home = () => {
 				margin={1}
 				border={'dashed thin violet'}
 				padding={2}>
-				<Typography variant="h3">はじめに</Typography>
+				<Typography variant="h4">はじめに</Typography>
 				<Typography variant="body1" whiteSpace={'pre-wrap'} mt={2}>
 					{introduction}
 				</Typography>
 			</Box>
 			<Box margin={1} border={'dashed thin violet'} padding={2}>
-				<Typography variant="h5">更新履歴</Typography>
+				<Typography variant="h4">更新履歴</Typography>
 				<Box overflow={'auto'} maxHeight={200} border={'thick'}>
 					<Stack direction={'column'} gap={2} margin={1}>
 						{updateHistory
