@@ -1,1 +1,2 @@
-export * from "./original-mui-theme";
+export * from './original-mui-theme';
+export * from './Games';
